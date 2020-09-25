@@ -5,8 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class FlagLogic : MonoBehaviour
 {
+
+    AudioSource nextLevelAudio;
+
+    private void Start()
+    {
+        nextLevelAudio = GetComponent<AudioSource>();
+    }
     private void OnTriggerEnter(Collider other)
     {
+<<<<<<< Updated upstream
+=======
+
+        nextLevelAudio.Play();
+>>>>>>> Stashed changes
         SceneManager.LoadScene("LevelOne");
     }
 }
