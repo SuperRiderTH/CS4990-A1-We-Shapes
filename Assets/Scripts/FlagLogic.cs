@@ -14,11 +14,9 @@ public class FlagLogic : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-<<<<<<< Updated upstream
-=======
 
         nextLevelAudio.Play();
->>>>>>> Stashed changes
+
         SceneManager.LoadScene("LevelOne");
     }
 }
