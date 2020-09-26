@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Default Shape Material
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL
     _GRADSETTINGS_D_USE_GLOBAL _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL
     _GRADSETTINGS_R_USE_GLOBAL _GRADSETTINGS_T_USE_GLOBAL _LMAPBLENDINGMODE_ADD _MODE_OPAQUE
@@ -24,6 +24,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AOTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AlphaTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -68,6 +72,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - PixelSnap: 0
     - _AOEnable: 0
     - _AOPower: 1
     - _AOuv: 0
@@ -80,6 +85,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DontMix: 0
     - _DstBlend: 0
+    - _EnableExternalAlpha: 0
     - _Fade: 1
     - _FogHeight: 10
     - _FogYStartPos: 0
@@ -168,6 +174,7 @@ Material:
     - _Color2_T: {r: 1, g: 1, b: 1, a: 1}
     - _Color_Fog: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _GizmoPosition_B: {r: 0, g: 0, b: 10, a: 10}
     - _GizmoPosition_D: {r: 0, g: 0, b: 10, a: 10}
     - _GizmoPosition_F: {r: 0, g: 0, b: 10, a: 10}
@@ -182,6 +189,7 @@ Material:
     - _GradientYStartPos_L: {r: 0, g: 0, b: 0, a: 0}
     - _GradientYStartPos_R: {r: 0, g: 0, b: 0, a: 0}
     - _LMColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _TintColor: {r: 0, g: 0, b: 0, a: 1}
