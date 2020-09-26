@@ -3644,6 +3644,7 @@ GameObject:
   - component: {fileID: 1748685280}
   - component: {fileID: 1748685279}
   - component: {fileID: 1748685281}
+  - component: {fileID: 1748685282}
   m_Layer: 0
   m_Name: Player Shape
   m_TagString: Player
@@ -3724,6 +3725,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1748685282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748685276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42e97d0fb3eb44e5a2ba178c39fdebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxFallDistance: -5.5
 --- !u!1 &1751527813 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3958263340792852649, guid: b9eb09c34c2a24648862d56f49abe656,
