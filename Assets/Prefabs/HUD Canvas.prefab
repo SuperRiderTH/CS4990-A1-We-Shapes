@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6301767372685148250}
   - component: {fileID: 6301767372685148251}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 6301767373837383962}
   - component: {fileID: 6301767373837383963}
   m_Layer: 5
-  m_Name: Image - Logo
+  m_Name: Image - Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,9 +213,10 @@ GameObject:
   - component: {fileID: 6301767374456077347}
   - component: {fileID: 6301767374456077344}
   - component: {fileID: 6301767374456077345}
+  - component: {fileID: 1070258000184436141}
   m_Layer: 5
   m_Name: HUD Canvas
-  m_TagString: Untagged
+  m_TagString: HUD
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -300,3 +301,15 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1070258000184436141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301767374456077351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f6b790bc37948449cb3f35775d1be9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameControllerScript : MonoBehaviour
 {
 
     string currentSceneName = "";
+    float timeSpent;
+    public string timeString;
 
     public int collectables = 0;
     public int collectablesAvailable = 0;
@@ -87,13 +90,16 @@ public class GameControllerScript : MonoBehaviour
     // This is ran when the scene changes.
     void SceneChanged()
     {
+        // Init all these variables because the scene has changed.
         // We don't need to know anything about the collectables, just how many there are.
         collectables = 0;
         collectablesAvailable = GameObject.FindGameObjectsWithTag("Collectable").Length;
         currentSceneName = SceneManager.GetActiveScene().name;
         levelComplete = false;
+        timeSpent = 0f;
+        timeString = "0:00";
 
-        if (currentSceneName != "MainMenu")
+        if ( currentSceneName != "MainMenu" && GameObject.FindGameObjectsWithTag("HUD").Length == 0 )
         {
             Instantiate(hudCanvas);
         }
@@ -113,7 +119,14 @@ public class GameControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!levelComplete)
+        {
+            timeSpent += Time.deltaTime;
+        }
+
+        // We are making the string here, and the HUD will grab it from the Game Controller.
+        timeString = Mathf.Floor( timeSpent / 60 ).ToString() + ":" + Mathf.Floor( timeSpent % 60 ).ToString().PadLeft(2,'0');
+
     }
 
     // These are used to keep track when the scene changes.
