@@ -5,11 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuButtons : MonoBehaviour
 {
+
+    private GameControllerScript gameController;
+
+    void Start()
+    {
+        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControllerScript>();
+    }
+
     // Start is called before the first frame update
     public void StartGame(string sceneName)
     {
-        Debug.Log("Attempting to go to scene: " + sceneName);
-        SceneManager.LoadScene(sceneName);
+        gameController.NextLevel();
     }
 
     public void ShowControls()

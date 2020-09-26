@@ -7,16 +7,16 @@ public class FlagLogic : MonoBehaviour
 {
 
     AudioSource nextLevelAudio;
+    GameControllerScript gameController;
 
     private void Start()
     {
+        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControllerScript>();
         nextLevelAudio = GetComponent<AudioSource>();
     }
     private void OnTriggerEnter(Collider other)
     {
-
         nextLevelAudio.Play();
-
-        SceneManager.LoadScene("LevelOne");
+        gameController.NextLevel();
     }
 }
