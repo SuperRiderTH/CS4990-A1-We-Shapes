@@ -76,22 +76,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void FallChecker()
-    {
-        // Check if we fall down, and reload the scene.
-        if ( transform.position.y < -10 )
-        {
-            string currentSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(currentSceneName);
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
 
         PlayerMovement();
-        FallChecker();
 
         // TODO: Shape Transformation
 
