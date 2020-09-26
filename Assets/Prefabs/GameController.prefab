@@ -43,9 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c20efd21bca341d5b504ab419898179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameState: 0
   collectables: 0
   collectablesAvailable: 0
   levelComplete: 0
   winCanvas: {fileID: 9169047612983154600, guid: 7dca04098711f483b84f21acda1e9319,
     type: 3}
+  hudCanvas: {fileID: 6301767374456077351, guid: 1d909c0c6133245fe90cdf6520227aef,
+    type: 3}
+  LevelOrder:
+  - Tutorial
+  - LevelOne

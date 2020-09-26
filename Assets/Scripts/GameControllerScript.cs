@@ -15,6 +15,7 @@ public class GameControllerScript : MonoBehaviour
     public bool levelComplete = false;
 
     public GameObject winCanvas;
+    public GameObject hudCanvas;
 
     // We give the controller the level order here, so we can go to it.
     public string[] LevelOrder = new string[] 
@@ -91,6 +92,12 @@ public class GameControllerScript : MonoBehaviour
         collectablesAvailable = GameObject.FindGameObjectsWithTag("Collectable").Length;
         currentSceneName = SceneManager.GetActiveScene().name;
         levelComplete = false;
+
+        if (currentSceneName != "MainMenu")
+        {
+            Instantiate(hudCanvas);
+        }
+
     }
 
     // Start is called before the first frame update
