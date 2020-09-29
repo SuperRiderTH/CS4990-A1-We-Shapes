@@ -14,7 +14,7 @@ public class CollectableScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        GameObject.Find("GameController").GetComponent<GameControllerScript>().collectables += 1;
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControllerScript>().collectables += 1;
         AudioSource.PlayClipAtPoint(audioS.clip, transform.position);
         Destroy(gameObject);
     }
