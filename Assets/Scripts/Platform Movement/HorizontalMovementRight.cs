@@ -13,6 +13,14 @@ public class HorizontalMovementRight : MonoBehaviour
 
     public float speed = 0.01f;
 
+    private void OnTriggerStay(Collider other)
+    {
+        other.transform.SetParent(transform);
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        other.transform.SetParent(null);
+    }
 
     // Start is called before the first frame update
     private void Start()

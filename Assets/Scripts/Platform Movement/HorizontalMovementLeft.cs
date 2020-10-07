@@ -15,6 +15,15 @@ public class HorizontalMovementLeft : MonoBehaviour
 
 
     // Start is called before the first frame update
+
+    private void OnTriggerStay(Collider other)
+    {
+        other.transform.SetParent(transform);
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        other.transform.SetParent(null);
+    }
     private void Start()
     {
         pos1 = transform.position;

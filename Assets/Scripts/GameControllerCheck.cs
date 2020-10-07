@@ -6,6 +6,7 @@ public class GameControllerCheck : MonoBehaviour
 {
 
     public GameObject GameController;
+    
 
     // Start is called before the first frame update
     void Awake()
@@ -16,6 +17,10 @@ public class GameControllerCheck : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
     {

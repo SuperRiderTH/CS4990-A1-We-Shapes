@@ -11,7 +11,14 @@ public class VerticalMovementDown : MonoBehaviour
 
     public float speed = 1f;
 
-
+    private void OnTriggerStay(Collider other)
+    {
+        other.transform.SetParent(transform);
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        other.transform.SetParent(null);
+    }
     // Start is called before the first frame update
     private void Start()
     {

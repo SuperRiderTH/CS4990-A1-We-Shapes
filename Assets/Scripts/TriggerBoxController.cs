@@ -6,6 +6,7 @@ public class TriggerBoxController : MonoBehaviour
 {
 
     GameObject playerChild;
+    bool isPlayerSphere = false;
     AudioSource powerUpAudio;
 
     private void Start()
@@ -13,24 +14,30 @@ public class TriggerBoxController : MonoBehaviour
         powerUpAudio = GetComponent<AudioSource>();
     }
 
-   
+
     //switches player to a cirle
     private void OnTriggerEnter(Collider other)
     {
-
-        AudioSource.PlayClipAtPoint(powerUpAudio.clip, transform.position);
-        other.GetComponent<BoxCollider>().enabled = false;
-
-        Transform trans = other.transform;
-        Transform childTrans = trans.Find("Shape - Cube");
-
-
-        if (childTrans != null)
+       if (isPlayerSphere == false)
         {
-            playerChild = childTrans.gameObject;
-        }
+            AudioSource.PlayClipAtPoint(powerUpAudio.clip, transform.position);
+            other.GetComponent<BoxCollider>().enabled = false;
+            
 
-        playerChild.GetComponent<MeshRenderer>().enabled = false;
+            Transform trans = other.transform;
+            Transform childTrans = trans.Find("Shape - Cube");
+
+            if (childTrans != null)
+            {
+                playerChild = childTrans.gameObject;
+            }
+
+            playerChild.GetComponent<MeshRenderer>().enabled = false;
+            isPlayerSphere = true;
+        }
+    
+
+        
     
 
     

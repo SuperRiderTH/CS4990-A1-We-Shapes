@@ -16,6 +16,7 @@ public class GameControllerScript : MonoBehaviour
     public int collectablesAvailable = 0;
 
     public bool levelComplete = false;
+    public bool isPlayerSphere = false;
 
     public GameObject winCanvas;
     public GameObject hudCanvas;
@@ -111,6 +112,7 @@ public class GameControllerScript : MonoBehaviour
     {
         // We want to use this Game Controller, so we don't want to remove it.
         DontDestroyOnLoad(this.gameObject);
+        
 
         // Run this to initialize any variables.
         SceneChanged();
