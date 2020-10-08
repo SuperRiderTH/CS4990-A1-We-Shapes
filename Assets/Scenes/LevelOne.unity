@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4430064, g: 0.49219555, b: 0.5719241, a: 1}
+  m_IndirectSpecularColor: {r: 0.44300672, g: 0.4921959, b: 0.5719246, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -481,8 +481,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181446457}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 17.36, y: 13.65, z: 70.21}
-  m_LocalScale: {x: 3, y: 1, z: 4}
+  m_LocalPosition: {x: 17.5, y: 13.65, z: 70.21}
+  m_LocalScale: {x: 4, y: 1, z: 4}
   m_Children: []
   m_Father: {fileID: 526826363}
   m_RootOrder: 12
@@ -496,10 +496,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 181446457}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a999eaf63f9fe2b498503da3b3cd697d, type: 3}
+  m_Script: {fileID: 11500000, guid: a07bf463c57fd9340a456cc1dbaceea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  distance: 10
+  direction: Right
+  waitTime: 4
 --- !u!65 &181446460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -571,7 +574,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 2, z: 1.0000002}
+  m_Size: {x: 0.4, y: 2, z: 0.4}
   m_Center: {x: 0, y: 0, z: -0.00000023841858}
 --- !u!1 &250717942
 GameObject:
@@ -1968,7 +1971,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637706028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.1, y: 8, z: 22.2}
+  m_LocalPosition: {x: -10.1, y: 9.33, z: 22.13}
   m_LocalScale: {x: 2, y: 10, z: 30}
   m_Children: []
   m_Father: {fileID: 526826363}
@@ -3068,8 +3071,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007489270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.81816, y: 13.65, z: 83.21}
-  m_LocalScale: {x: 3, y: 1, z: 4}
+  m_LocalPosition: {x: 27.5, y: 13.65, z: 84}
+  m_LocalScale: {x: 4, y: 1, z: 4}
   m_Children: []
   m_Father: {fileID: 526826363}
   m_RootOrder: 13
@@ -3083,10 +3086,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1007489270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b9746aa810747478d7302ae33c00d9, type: 3}
+  m_Script: {fileID: 11500000, guid: a07bf463c57fd9340a456cc1dbaceea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  distance: 10
+  direction: Backward
+  waitTime: 4
 --- !u!65 &1007489273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3158,7 +3164,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
+  m_Size: {x: 0.4, y: 2, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1127243013
 GameObject:
@@ -4069,8 +4075,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414286726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.818159, y: 13.65, z: 70.21}
-  m_LocalScale: {x: 3, y: 1, z: 4}
+  m_LocalPosition: {x: 13.5, y: 13.65, z: 70.21}
+  m_LocalScale: {x: 4, y: 1, z: 4}
   m_Children: []
   m_Father: {fileID: 526826363}
   m_RootOrder: 11
@@ -4084,10 +4090,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1414286726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b9746aa810747478d7302ae33c00d9, type: 3}
+  m_Script: {fileID: 11500000, guid: a07bf463c57fd9340a456cc1dbaceea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  distance: 10
+  direction: Left
+  waitTime: 4
 --- !u!65 &1414286729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4159,7 +4168,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
+  m_Size: {x: 0.4, y: 2, z: 0.4}
   m_Center: {x: -0.00000023841858, y: 0, z: 0}
 --- !u!1001 &1416174474
 PrefabInstance:
@@ -4686,8 +4695,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541108444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8181589, y: 3.65, z: 66.329}
-  m_LocalScale: {x: 3, y: 1, z: 4}
+  m_LocalPosition: {x: 3.5, y: 3.65, z: 66.329}
+  m_LocalScale: {x: 4, y: 1, z: 4}
   m_Children: []
   m_Father: {fileID: 526826363}
   m_RootOrder: 10
@@ -4701,10 +4710,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1541108444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e7bab7a3790349418c661fbb4b6a2cc, type: 3}
+  m_Script: {fileID: 11500000, guid: a07bf463c57fd9340a456cc1dbaceea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  distance: 10
+  direction: Up
+  waitTime: 4
 --- !u!65 &1541108447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4776,7 +4788,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
+  m_Size: {x: 0.4, y: 2, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1567956833
 GameObject:
@@ -5167,7 +5179,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!4 &1748685278
 Transform:
@@ -5199,7 +5211,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 265147327}
   playerInControl: 1
-  speed: 5
 --- !u!65 &1748685280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5222,7 +5233,7 @@ SphereCollider:
   m_GameObject: {fileID: 1748685276}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}

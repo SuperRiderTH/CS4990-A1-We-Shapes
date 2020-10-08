@@ -22,7 +22,7 @@ public class TriggerBoxController : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(powerUpAudio.clip, transform.position);
             other.GetComponent<BoxCollider>().enabled = false;
-            
+            other.GetComponent<SphereCollider>().enabled = true;
 
             Transform trans = other.transform;
             Transform childTrans = trans.Find("Shape - Cube");
