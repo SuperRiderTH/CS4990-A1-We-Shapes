@@ -59,7 +59,7 @@ public class PlatformMovement : MonoBehaviour
         switch (backward)
         {
             case true:
-                transform.position = Vector3.MoveTowards(transform.position, pos1, speed);
+                transform.position = Vector3.MoveTowards(transform.position, pos1, speed * 0.1f);
                 if (transform.position == pos1)
                 {
                     backward = false;
@@ -68,7 +68,7 @@ public class PlatformMovement : MonoBehaviour
                 }
                 break;
             default:
-                transform.position = Vector3.MoveTowards(transform.position, pos2, speed);
+                transform.position = Vector3.MoveTowards(transform.position, pos2, speed * 0.1f);
                 if (transform.position == pos2)
                 {
                     backward = true;
@@ -78,7 +78,7 @@ public class PlatformMovement : MonoBehaviour
                 break;
         }
 
-        Invoke("PlatformMove", 0.06f);
+        Invoke("PlatformMove", 0.006f);
     }
 
     private void OnTriggerStay(Collider other)
