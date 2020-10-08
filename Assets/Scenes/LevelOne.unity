@@ -496,10 +496,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 181446457}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a999eaf63f9fe2b498503da3b3cd697d, type: 3}
+  m_Script: {fileID: 11500000, guid: a07bf463c57fd9340a456cc1dbaceea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  distance: 10
+  direction: Right
+  waitTime: 4
 --- !u!65 &181446460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3083,10 +3086,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1007489270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b9746aa810747478d7302ae33c00d9, type: 3}
+  m_Script: {fileID: 11500000, guid: a07bf463c57fd9340a456cc1dbaceea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  distance: 10
+  direction: Backward
+  waitTime: 4
 --- !u!65 &1007489273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4084,10 +4090,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1414286726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b9746aa810747478d7302ae33c00d9, type: 3}
+  m_Script: {fileID: 11500000, guid: a07bf463c57fd9340a456cc1dbaceea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  distance: 10
+  direction: Left
+  waitTime: 4
 --- !u!65 &1414286729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4701,10 +4710,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1541108444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e7bab7a3790349418c661fbb4b6a2cc, type: 3}
+  m_Script: {fileID: 11500000, guid: a07bf463c57fd9340a456cc1dbaceea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  distance: 10
+  direction: Up
+  waitTime: 4
 --- !u!65 &1541108447
 BoxCollider:
   m_ObjectHideFlags: 0
