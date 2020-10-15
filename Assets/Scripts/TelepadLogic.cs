@@ -35,8 +35,8 @@ public class TelepadLogic : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 		// Teleport Player to Exit Telepad!
-        
+        if (isExitTelepad == false && other.gameObject.tag == "Player") { 
 			other.transform.position = exitPos; 
-		 // end if
+		} // end if
     } // end OnTriggerEnter
 } // end TelepadLogic class

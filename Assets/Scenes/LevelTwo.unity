@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4430064, g: 0.49219555, b: 0.5719241, a: 1}
+  m_IndirectSpecularColor: {r: 0.44300693, g: 0.49219596, b: 0.5719253, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1036,12 +1036,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2650854036766943841}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &368015296 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3958263340792852649, guid: b9eb09c34c2a24648862d56f49abe656,
-    type: 3}
-  m_PrefabInstance: {fileID: 2650854036766943841}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &421319473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,7 +1092,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421319473}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -2011,7 +2005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe6ea969bfbf4edb807d4fbd40e5167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectable: {fileID: 1751527813}
+  collectable: {fileID: 43296755}
 --- !u!1 &752501715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,7 +2331,7 @@ PrefabInstance:
     - target: {fileID: 9169047612983154604, guid: 7dca04098711f483b84f21acda1e9319,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dca04098711f483b84f21acda1e9319, type: 3}
@@ -3297,7 +3291,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007506092}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -4612,7 +4606,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299981548}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -4869,7 +4863,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423772809}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -7686,7 +7680,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 368015296}
+      objectReference: {fileID: 0}
     - target: {fileID: 906481850318894632, guid: 8e48a48c497ca4ce19506c17f7061274,
         type: 3}
       propertyPath: gameController

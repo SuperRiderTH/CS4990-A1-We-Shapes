@@ -22,14 +22,12 @@ public class GameControllerScript : MonoBehaviour
     public GameObject hudCanvas;
 
     // We give the controller the level order here, so we can go to it.
-    public string[] LevelO = new string[]
+    public string[] LevelOrder = new string[] 
     {
-        "Tutorial", "LevelOne", "LevelTwo"
+        "Tutorial",
+        "LevelOne"
     };
-    public string[] LevelOrder = new string[]
-    {
-        "Tutorial", "LevelOne", "LevelTwo"
-    };
+
 
     public void GameWin()
     {
@@ -54,16 +52,16 @@ public class GameControllerScript : MonoBehaviour
     {
 
         // The current level is not in the level order, so we just head to the first one.
-        if (!LevelO.Contains(currentSceneName))
+        if (!LevelOrder.Contains(currentSceneName))
         {
-            ChangeScene(LevelO[0]);
+            ChangeScene(LevelOrder[0]);
         }
         else
         {
-            for (int i = 0; i < LevelO.Length; i++)
+            for (int i = 0; i < LevelOrder.Length; i++)
             {
                 // Win the game if you are on the final level.
-                if ( i + 1 == LevelO.Length )
+                if ( i + 1 == LevelOrder.Length )
                 {
                     GameWin();
                     return;
@@ -71,9 +69,9 @@ public class GameControllerScript : MonoBehaviour
                 else
                 {
                     // Look for the level we are on, and go to the next one.
-                    if ( LevelO[i] == currentSceneName )
+                    if ( LevelOrder[i] == currentSceneName )
                     {
-                        ChangeScene(LevelO[i+1]);
+                        ChangeScene(LevelOrder[i+1]);
                         return;
                     }
                 }
