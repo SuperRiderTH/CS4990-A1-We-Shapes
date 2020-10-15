@@ -25,7 +25,8 @@ public class GameControllerScript : MonoBehaviour
     public string[] LevelOrder = new string[] 
     {
         "Tutorial",
-        "LevelOne"
+        "LevelOne",
+        "LevelTwo"
     };
 
 
