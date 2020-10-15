@@ -22,7 +22,7 @@ public class GameControllerScript : MonoBehaviour
     public GameObject hudCanvas;
 
     // We give the controller the level order here, so we can go to it.
-    public string[] LevelOrder = new string[] 
+    private string[] LevelOrder = new string[] 
     {
         "Tutorial",
         "LevelOne",
